@@ -1,0 +1,112 @@
+* {font-family: Verdana; font-size: 12px}
+
+
+body { padding: 0px; margin: 0px }
+
+main { width: 800px; margin: auto }
+
+h1 
+{ 
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #124f70;
+	padding: 10px;
+	border-radius: 4px;
+	margin: 9px 0 0 0;
+}
+
+input, button
+{
+	padding: 5px;
+	box-sizing: border-box;
+	border: thin solid;
+    border-radius: 3px;
+	margin: 9px 0;
+}
+
+input:focus
+{ 
+    outline: none !important;
+    box-sizing: border-box;
+    border: thin solid #124f70;
+    border-radius: 3px;
+}
+
+#txtFiltro
+{
+	width: 79%;
+}
+
+#btnNovo, #btnBuscar
+{
+	width: 9%;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+table { width: 100%; background-color: #124f70; border-radius: 4px; }
+table th { background-color: #124f70; color: #fff; padding: 5px; }
+table td { background-color: #fff; padding: 5px; text-align: center }
+
+.info-nome{text-align: left;}
+
+.reprovado td {color:#ff2f2f; font-weight: bold }
+
+#pnlNovo
+{
+	border-radius: 4px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: thin solid #124f70;
+	background-color: #fff;
+}
+
+#txtNome {width: 280px}
+
+.caixaFlutuante
+{
+	text-align: center;
+	width: 375px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -187px;
+	margin-top: -93px;
+	box-shadow: 5px 5px 5px 0 #babaca;
+}
+
+.bloqueio
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	opacity: 0.85;
+}
+
+.escondido {display: none;}
+
+.linhaImpar td {background-color: #e0e9f4;}
+
+#msg {color: #f00; text-transform: uppercase;}
+
+#btnAdicionar, #btnCancelar {cursor: pointer;}
+
+.imgX
+{
+	width: 13px;
+	cursor: pointer;
+}
+
+#btnX
+{
+	margin: 0;
+    border: none;
+    height: 14px;
+    padding: 0;
+    width: 15px;
+}
+

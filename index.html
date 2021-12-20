@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lista de Alunos</title>
+	<link rel="stylesheet" type="text/css" href="css/css-index.css">
+</head>
+<body>
+	<main>
+		<h1>Lista de Alunos</h1>
+		<form>
+			<input type="search" name="txtFiltro" id="txtFiltro">
+			<button id="btnBuscar">Buscar</button>
+			<button id="btnNovo">Novo</button>
+		</form>
+		
+		<table id="tblAlunos">
+			<thead>
+				<th>RM</th>
+				<th>Nome</th>
+				<th>Prova 01</th>
+				<th>Prova 02</th>
+				<th>Média</th>
+				<th>Situação final</th>
+			</thead>
+			<tbody>
+				<tr class="aluno">
+					<td class="info-rm">102544</td>
+					<td class="info-nome">ALINE DE CASTRO LIMA</td>
+					<td class="info-prova1">5,5</td>
+					<td class="info-prova2">6,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+				<tr class="aluno">
+					<td class="info-rm">102545</td>
+					<td class="info-nome">ANA DE LIMA SIQUEIRA</td>
+					<td class="info-prova1">7,5</td>
+					<td class="info-prova2">8,5</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+			    <tr class="aluno">
+					<td class="info-rm">102546</td>
+					<td class="info-nome">CAROLINA ROCHA DA SILVA</td>
+					<td class="info-prova1">5,0</td>
+					<td class="info-prova2">3,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+
+				<tr class="aluno">
+					<td class="info-rm">102547</td>
+					<td class="info-nome">CAROLINE SANTOS</td>
+					<td class="info-prova1">1,0</td>
+					<td class="info-prova2">8,5</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+
+
+				<tr class="aluno">
+					<td class="info-rm">102548</td>
+					<td class="info-nome">DAVI FRANCISCO CORREA</td>
+					<td class="info-prova1">0,0</td>
+					<td class="info-prova2">7,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+				<tr class="aluno">
+					<td class="info-rm">102549</td>
+					<td class="info-nome">DAVI ONISHIRO</td>
+					<td class="info-prova1">10,0</td>
+					<td class="info-prova2">8,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+				<tr class="aluno">
+					<td class="info-rm">102550</td>
+					<td class="info-nome">EDUARDO PINHEIRO SILVA</td>
+					<td class="info-prova1">6,0</td>
+					<td class="info-prova2">8,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+				<tr class="aluno">
+					<td class="info-rm">102551</td>
+					<td class="info-nome">FELIPE PEREIRA BARBOSA</td>
+					<td class="info-prova1">9,0</td>
+					<td class="info-prova2">5,0</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+
+				<tr class="aluno">
+					<td class="info-rm">102552</td>
+					<td class="info-nome">FELIPE COSTA</td>
+					<td class="info-prova1">10,0</td>
+					<td class="info-prova2">9,5</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+
+				<tr class="aluno">
+					<td class="info-rm">102553</td>
+					<td class="info-nome">EDSON LEGUTH</td>
+					<td class="info-prova1">8,0</td>
+					<td class="info-prova2">6,5</td>
+					<td class="info-media">0</td>
+					<td class="info-situacao">-</td>
+					<td class="excluirAluno"><img class="imgX" src="images/X.png" alt="Excluir aluno"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="bloqueio escondido"></div>
+		<div id="pnlNovo" class="caixaFlutuante escondido">
+			<form id="frmNovo">
+				<label for="txtNota1">Nome:</label>
+				<input type="text" name="txtNome" id="txtNome">
+
+				<p>
+				<label for= "txtNota2">RM:</label>
+				<input type="number" name="txtRM" id="txtRM" min="0" max="999999">
+				<label for="txtNota1">Nota 1:</label>
+				<input type="number" name="txtNota1" id="txtNota1" min="0" max="10">
+				<label for= "txtNota2">Nota 2:</label>
+				<input type="number" name="txtNota2" id="txtNota2" min="0" max="10">
+				</p>
+
+				<span id="msg"></span>
+				
+				<p>
+					<button id="btnAdicionar">Adicionar</button>
+					<button id="btnCancelar">Cancelar</button>
+				</p>
+			</form>
+		</div>
+	</main>
+
+	
+	<script type="text/javascript" src="js/funcoes.js"></script>
+	<script type="text/javascript" src="js/calculosTabela.js"></script>
+	<script type="text/javascript" src="js/novoAluno.js"></script>
+	<script type="text/javascript" src="js/buscarAluno.js"></script>
+</body>
+</html>
